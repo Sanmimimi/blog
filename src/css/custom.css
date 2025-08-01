@@ -297,3 +297,19 @@ div[class^='announcementBar_'] {
   )::after {
   content: '';
 }
+
+/* 隐藏搜索框中的Algolia logo */
+.DocSearch-Logo {
+  display: none !important;
+}
+
+/* 隐藏搜索页面底部的Algolia标识 */
+.DocSearch-Footer .DocSearch-Logo {
+  display: none !important;
+}
+
+/* 隐藏搜索结果页面的Algolia标识 */
+[class*="algolia"] svg,
+[class*="Algolia"] svg {
+  display: none !important;
+}
