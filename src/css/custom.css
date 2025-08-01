@@ -315,29 +315,42 @@ div[class^='announcementBar_'] {
 }
 
 /* 隐藏giscus评论区的"由 giscus 提供支持"文字 */
-.giscus-frame {
+.giscus {
   position: relative;
+  overflow: hidden;
 }
 
 /* 隐藏giscus iframe底部的powered by文字 */
-.giscus-frame::after {
+.giscus::after {
   content: '';
   position: absolute;
   bottom: 0;
   left: 0;
   right: 0;
-  height: 30px;
-  background: var(--ifm-background-color);
-  z-index: 10;
+  height: 40px;
+  background: var(--content-background);
+  z-index: 999;
+  pointer-events: none;
 }
 
 /* 针对giscus iframe的样式调整 */
-.giscus-frame iframe {
-  margin-bottom: -30px !important;
+.giscus iframe {
+  margin-bottom: -40px !important;
 }
 
 /* 隐藏包含giscus链接的元素 */
 [class*="giscus"] a[href*="giscus.app"],
-.giscus a[href*="giscus.app"] {
+.giscus a[href*="giscus.app"],
+a[href*="giscus.app"] {
   display: none !important;
+  visibility: hidden !important;
+}
+
+/* 隐藏giscus相关的powered by文字 */
+[class*="giscus"] [class*="powered"],
+.giscus [class*="powered"],
+[aria-label*="giscus"],
+[title*="giscus"] {
+  display: none !important;
+  visibility: hidden !important;
 }
