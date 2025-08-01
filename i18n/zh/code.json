@@ -329,7 +329,7 @@
     "description": "The ARIA label for search page input"
   },
   "theme.SearchPage.algoliaLabel": {
-    "message": "",
+    "message": "通过 Algolia 搜索",
     "description": "The ARIA label for Algolia mention"
   },
   "theme.SearchPage.noResultsText": {
@@ -384,4 +384,3 @@
     "message": "源码",
     "description": "The label for the source link of a showcase card"
   }
-}
