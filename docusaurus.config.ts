@@ -8,7 +8,7 @@ const beian = '闽ICP备2020017848号-3'
 const beian1 = '闽公网安备35021102000847号'
 
 const config: Config = {
-  title: '愧怍',
+  title: '颜司晗',
   url: 'https://kuizuo.me',
   baseUrl: '/',
   favicon: 'img/favicon.ico',
