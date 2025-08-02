@@ -99,7 +99,7 @@ const config: Config = {
             { label: 'cyberChef', to: 'https://gchq.github.io/CyberChef' },
             { label: 'api服务', to: 'https://api.kuizuo.me' },
             { label: '便民服务', to: 'https://service.kuizuo.me' },
-            { label: '站点监控', to: 'https://uptime.kuizuo.me' },
+            { label: '朋友圈', to: 'https://shxy.dpdns.org/' },
           ],
         },
         {
