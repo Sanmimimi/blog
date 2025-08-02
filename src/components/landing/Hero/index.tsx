@@ -49,7 +49,7 @@ function Name() {
           e.currentTarget.style.setProperty('--mouse-y', `${bounding.y}px`)
         }}
       >
-        <Translate id="homepage.hero.name">颜司晗</Translate>
+        <Translate id="homepage.hero.name">x</Translate>
       </span>
       <span className="ml-1">👋</span>
     </motion.div>
