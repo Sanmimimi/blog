@@ -8,7 +8,7 @@ const beian = '闽ICP备2020017848号-3'
 const beian1 = '闽公网安备35021102000847号'
 
 const config: Config = {
-  title: '颜司晗',
+  title: 'x',
   url: 'https://kuizuo.me',
   baseUrl: '/',
   favicon: 'img/favicon.ico',
@@ -17,7 +17,7 @@ const config: Config = {
   customFields: {
     bio: '道阻且长，行则将至',
     description:
-      '是一个由愧怍创建的个人博客，主要分享编程开发知识和项目。',
+      '是一个由x怍创建的个人博客，主要分享编程开发知识和项目。',
   },
   themeConfig: {
     // announcementBar: {
@@ -114,7 +114,7 @@ const config: Config = {
         <p style="display: inline-flex; align-items: center;"><img style="height:20px;margin-right: 0.5rem;" src="/img/police.png" alt="police" height="20"/><a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=${
           beian1.match(/\d+/)?.[0]
         }" >${beian1}</a></p>
-        <p>Copyright © 2024 - ${new Date().getFullYear()} 颜司晗</p> 
+        <p>Copyright © 2024 - ${new Date().getFullYear()} x</p> 
         `,
     },
     algolia: {
