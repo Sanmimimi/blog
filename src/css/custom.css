@@ -309,8 +309,8 @@ div[class^='announcementBar_'] {
 }
 
 /* 隐藏搜索结果页面的Algolia标识 */
-[class*="algolia"] svg,
-[class*="Algolia"] svg {
+.DocSearch-Footer svg,
+.DocSearch-Logo svg {
   display: none !important;
 }
 
