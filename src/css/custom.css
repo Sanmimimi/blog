@@ -297,3 +297,85 @@ div[class^='announcementBar_'] {
   )::after {
   content: '';
 }
+
+/* 隐藏搜索框中的Algolia logo */
+.DocSearch-Logo {
+  display: none !important;
+}
+
+/* 隐藏搜索页面底部的Algolia标识 */
+.DocSearch-Footer .DocSearch-Logo {
+  display: none !important;
+}
+
+/* 隐藏搜索结果页面的Algolia标识 */
+[class*="algolia"] svg,
+[class*="Algolia"] svg {
+  display: none !important;
+}
+
+/* 隐藏giscus评论区的"由 giscus 提供支持"文字 */
+.giscus {
+  position: relative;
+  overflow: hidden;
+}
+
+/* 使用更大的覆盖层隐藏giscus iframe底部的powered by文字 */
+.giscus::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 60px;
+  background: var(--content-background);
+  z-index: 9999;
+  pointer-events: none;
+}
+
+/* 针对暗色主题的覆盖层 */
+html[data-theme='dark'] .giscus::after {
+  background: var(--content-background);
+}
+
+/* 针对giscus iframe的样式调整 */
+.giscus iframe {
+  margin-bottom: -60px !important;
+  max-height: calc(100% - 60px) !important;
+}
+
+/* 隐藏包含giscus链接的元素 */
+[class*="giscus"] a[href*="giscus.app"],
+.giscus a[href*="giscus.app"],
+a[href*="giscus.app"],
+[href*="giscus.app"] {
+  display: none !important;
+  visibility: hidden !important;
+  opacity: 0 !important;
+  height: 0 !important;
+  width: 0 !important;
+}
+
+/* 隐藏giscus相关的powered by文字 */
+[class*="giscus"] [class*="powered"],
+.giscus [class*="powered"],
+[aria-label*="giscus"],
+[title*="giscus"],
+[class*="footer"] [class*="giscus"],
+.giscus [class*="footer"] {
+  display: none !important;
+  visibility: hidden !important;
+  opacity: 0 !important;
+  height: 0 !important;
+}
+
+/* 强制隐藏任何包含giscus文字的元素 */
+*[class*="giscus"]:not(.giscus):not(.giscus-frame) {
+  display: none !important;
+}
+
+/* 隐藏可能的footer元素 */
+.giscus iframe + *,
+.giscus-frame + * {
+  display: none !important;
+}
